@@ -1,0 +1,9 @@
+<h1> Compétences</h1>
+<div class="H-block-competences">
+  <% Competence.all.each do |competence| %>
+    <div class="H-competence_content">
+      <p><%= competence.titre%></p>
+      <p><%= competence.texte%></p>
+    </div>
+  <% end %>
+</div>

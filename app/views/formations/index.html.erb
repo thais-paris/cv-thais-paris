@@ -1,0 +1,24 @@
+<div class="titre-block">
+  <h1> Formation</h1>
+  <% if user_signed_in? %>
+    <%= link_to "Ajouter", new_formation_path, class: "btn btn-ghost" %>
+  <% else%>
+    <% %>
+  <% end %>
+</div>
+
+<% @formations.each do |formation| %>
+  <div class="block">
+    <h4> <%= formation.diplome%></h4>
+    <p> <%= formation.date%></p>
+    <h5> <%= formation.ecole%></h5>
+
+    <% if user_signed_in? %>
+      <%= link_to "Modifier", edit_formation_path(formation), class: "btn btn-ghost" %>
+      <%= link_to "Supprimer", formation_path(formation), method: :delete, data: { confirm: "Attention vous supprimez une formation. Merci de confirmer !" }, class: 'btn btn-ghost' %>
+    <% else%>
+      <% %>
+    <% end %>
+    <HR WIDTH="550">
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<div class="titre-block">
+  <h1>Expériences</h1>
+  <% if user_signed_in? %>
+    <%= link_to "Ajouter", new_experience_path, class: "btn btn-ghost" %>
+  <% else%>
+    <% %>
+  <% end %>
+</div>
+
+<% @experiences.each do |experience| %>
+  <div class="block">
+    <h4> <%= experience.post%></h4>
+    <p> <%= experience.date%></p>
+    <h5> <%= experience.entreprise%></h5>
+    <p> <%= experience.description%></p>
+
+    <% if user_signed_in? %>
+      <%= link_to "Modifier", edit_experience_path(experience), class: "btn btn-ghost" %>
+      <%= link_to "Supprimer", experience_path(experience), method: :delete, data: { confirm: "Attention vous supprimez une compétence. Merci de confirmer !" }, class: 'btn btn-ghost' %>
+    <% else%>
+      <% %>
+    <% end %>
+    <HR WIDTH="550">
+  </div>
+<% end %>

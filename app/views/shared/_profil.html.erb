@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+      <% User.all.each do |user| %>
+        <h1><%= user.title %></h1>
+        <h4 class="text-left"><%=user.title2%><h4>
+        <HR WIDTH=100>
+        <p class="p-2 text-left"><%= user.texte %></p>
+        <%= link_to "Mon cv", "https://drive.google.com/file/d/16bWbF2mTP-hoC8Br58Akk35QMjQietOD/view", target:"blank", class: "btn btn-ghost" %>
+      <%end%>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+<h1> Formation</h1>
+<div class="home_formation">
+  <% Formation.all.each do |formation| %>
+    <h4> <%= formation.diplome%></h4>
+    <p> <%= formation.date%> - <%= formation.ecole%></p>
+    <HR WIDTH="50">
+  <% end %>
+</div>
