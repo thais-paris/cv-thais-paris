@@ -3,6 +3,10 @@ class CompetencesController < ApplicationController
     @competences = Competence.all
   end
 
+  def show
+    @competence = Competence.find(params[:id])
+  end
+
   def new
     @competence = Competence.new
   end
@@ -26,6 +30,7 @@ class CompetencesController < ApplicationController
 
   def destroy
     @competence = Competence.find(params[:id])
+    # authorize @competence
     @competence.destroy
     redirect_to competences_path
   end

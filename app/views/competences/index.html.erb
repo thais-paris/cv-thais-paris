@@ -12,7 +12,7 @@
       <p><%= competence.texte%></p>
       <% if user_signed_in? %>
         <%= link_to "Modifier", edit_competence_path(competence), class: "btn btn-ghost" %>
-        <%= link_to "Supprimer", competence_path(competence), method: :delete, data: { confirm: "Attention vous supprimez une compétence. Merci de confirmer." }, class: 'btn btn-ghost' %>
+        <%= button_to "Supprimer", competence_path(competence), :method=>:delete, :class=>"btn btn-ghost" %>
       <% end %>
     </div>
   <% end %>

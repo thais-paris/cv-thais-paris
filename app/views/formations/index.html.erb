@@ -15,7 +15,7 @@
 
     <% if user_signed_in? %>
       <%= link_to "Modifier", edit_formation_path(formation), class: "btn btn-ghost" %>
-      <%= link_to "Supprimer", formation_path(formation), method: :delete, data: { confirm: "Attention vous supprimez une formation. Merci de confirmer !" }, class: 'btn btn-ghost' %>
+      <%= button_to "Supprimer", formation_path(formation), :method=>:delete, :class=>"btn btn-ghost"%>
     <% else%>
       <% %>
     <% end %>
