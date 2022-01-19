@@ -123,7 +123,7 @@ Rails.application.configure do
     :address        => ENV['MAILGUN_SMTP_SERVER'],
     :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'cv-thais-paris.heroku.com', # UPDATE THIS VALUE WITH YOUR OWN APP
+    :domain         => 'cv-thais-paris.herokuapp.com', # UPDATE THIS VALUE WITH YOUR OWN APP
     :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
