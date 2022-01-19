@@ -1,0 +1,26 @@
+#footer {
+  position:relative;
+  bottom: 0;
+  width: 100%;
+	left: 0;
+  height: 70px;
+  background-color: $first;
+  border: 1px solid $title;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 7px;
+  font-size: large;
+}
+
+.footer-text{
+  font-family: $second-title;
+  color: $text;
+  text-decoration: none;
+}
+
+.footer-text:hover {
+  color: $title;
+  text-decoration: none;
+}

@@ -1,0 +1,64 @@
+// block de toute les pages
+.titre-block{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-family: $title;
+
+}
+
+.block {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  margin-bottom: 30px;
+  padding: 20px 20px 20px 50px;
+  // haut, droite, bas, gauche
+  }
+
+
+
+// block de la page compétence
+.block-competences {
+  display: flex;
+  flex-wrap:wrap;
+  .competence_content {
+    background-color: $first;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 21%;
+    padding: 10px 10px 3px 10px;
+    border-radius: 5px;
+    border: 1px solid $title;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    // haut, droite, bas, gauche
+  }
+}
+
+
+// block Home
+.H-block-competences {
+  display: flex;
+  flex-wrap:wrap;
+  padding-bottom: -50px;
+  margin: 40px 0px 10px 0;
+  .H-competence_content {
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+    height: 47px;
+    border-radius: 6px;
+    border: 1px solid $title;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 4px;
+  }
+}

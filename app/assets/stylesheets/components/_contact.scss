@@ -1,0 +1,27 @@
+form { max-width:420px; margin:50px auto; }
+
+.form-control {
+  color: black;
+  font-family: $text;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: white ;
+  border:1px solid $title;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+.form-label{
+  color: transparent;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}

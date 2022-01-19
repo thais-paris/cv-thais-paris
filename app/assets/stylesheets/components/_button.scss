@@ -1,0 +1,14 @@
+.btn-ghost {
+  color: $text;
+  border: 1px solid $title;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  background-color: $first;
+  margin-top: 10px;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
