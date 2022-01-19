@@ -32,6 +32,7 @@ class ExperiencesController < ApplicationController
   def destroy
     @experience = Experience.find(params[:id])
     @experience.destroy
+    redirect_to experiences_path
   end
 
   private
