@@ -16,6 +16,14 @@
 
   <body class="<%= %w[yellow blue purple green pink red light_blue orange green_blue].sample %>">
     <div class="page_content">
+
+      <div class="container">
+        <br>
+        <% flash.each do |key, message| %>
+          <p class="alert alert-<%= key %>"><%= message %></p>
+        <% end %>
+      </div>
+
       <%= render 'shared/navbar' %>
       <%= render 'shared/flashes' %>
       <%= yield %>
