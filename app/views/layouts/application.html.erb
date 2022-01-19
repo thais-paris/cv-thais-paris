@@ -15,10 +15,11 @@
   </head>
 
   <body class="<%= %w[yellow blue purple green pink red light_blue orange green_blue].sample %>">
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-
-    <%= yield %>
+    <div class="page_content">
+      <%= render 'shared/navbar' %>
+      <%= render 'shared/flashes' %>
+      <%= yield %>
+    </div>
     <%= render 'shared/footer' %>
   </body>
 </html>
