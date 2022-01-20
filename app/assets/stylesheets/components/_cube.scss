@@ -89,7 +89,27 @@
   transform: rotateX(-90deg) translateZ(195px);
   line-height: 0px;
   text-align: center;
-  padding: 12px 35px 0px 35px;
+  padding: 47px 75px 0px 75px;
+  h1{
+    margin: 8px 0px -17px 0px;
+  }
+  label {
+    display: none;
+  }
+  .form-control {
+    font-size: 12px;
+    padding: 10px;
+    margin-bottom: 16px;
+    outline:0;
+  }
+  #contact_message{
+    padding: 14px 0px 55px 10px;
+  }
+  .btn-ghost {
+    font-size: 12px;
+    margin: 0px 138px 0px 0px;
+    border-radius: 5px;
+  }
 }
 
 
