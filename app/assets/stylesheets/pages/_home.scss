@@ -1,19 +1,10 @@
 // Specific CSS for your home-page
 .page_content{
-  min-height: 99vh;
+  min-height: 100vh;
 }
 
 #moi {
   background-image:url('moi.jpeg');
   background-size:cover;
   // border-radius: 5px;
-}
-
-.cube_option{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 0px;
-  height: 300px;
 }

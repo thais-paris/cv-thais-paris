@@ -1,26 +1,12 @@
-<div class="scene">
-  <div class="cube">
-    <div class="cube__face cube__face--front"><%= render "shared/profil", user: @user %></div>
-    <div class="cube__face cube__face--back" id="moi"></div>
-    <div class="cube__face cube__face--right"><%= render "shared/competence", competence: @competence %></div>
-    <div class="cube__face cube__face--left"><%= render "shared/formation", formation: @formation %></div>
-    <div class="cube__face cube__face--top"><%= render "shared/experience", experience: @experience %></div>
-    <div class="cube__face cube__face--bottom"><%= render "shared/contact", contact: @contact %></div>
+<div id="wrapper">
+  <div class="viewport">
+    <div class="cube">
+        <div class="cube__face cube__face--front"><%= render "shared/profil", user: @user %></div>
+        <div class="cube__face cube__face--back" id="moi"></div>
+        <div class="cube__face cube__face--right"><%= render "shared/competence", competence: @competence %></div>
+        <div class="cube__face cube__face--left"><%= render "shared/formation", formation: @formation %></div>
+        <div class="cube__face cube__face--top"><%= render "shared/experience", experience: @experience %></div>
+        <div class="cube__face cube__face--bottom"><%= render "shared/contact", contact: @contact  %></div>
+    </div>
   </div>
-</div>
-
-
-<div class="cube_option">
-  <p>
-    <label><input class="spin-cube-checkbox" type="checkbox" />Spin cube</label>
-    <label> <input class="backface-checkbox" type="checkbox" checked /> Backface visible</label>
-  </p>
-  <p class="radio-group">
-    <label><input type="radio" name="rotate-cube-side" value="front" checked /> Profil</label>
-    <label><input type="radio" name="rotate-cube-side" value="right" /> Compétences</label>
-    <label><input type="radio" name="rotate-cube-side" value="back" /> Photo  </label>
-    <label><input type="radio" name="rotate-cube-side" value="left" /> Formation  </label>
-    <label><input type="radio" name="rotate-cube-side" value="top" /> Expériences  </label>
-    <label><input type="radio" name="rotate-cube-side" value="bottom" /> Contact  </label>
-  </p>
 </div>
