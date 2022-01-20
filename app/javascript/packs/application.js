@@ -9,9 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 // import { RangeDisplay } from "components/cube"
-import { Events } from "components/rotate_cube";
-import { Viewport } from "components/rotate_cube";
-import { Cube } from "components/cube";
+import { Events, Viewport, Cube } from "components/rotate_cube";
 
 
 Rails.start()

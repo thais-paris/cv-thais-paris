@@ -8,7 +8,7 @@
       </div>
       <div>
         <% if user_signed_in? %>
-          <%= link_to "TP", destroy_user_session_path, method: :delete, class:"footer-text" %>
+          <%= button_to "deconexion", destroy_user_session_path, :method=>:delete, :class=>"btn btn-ghost"%>
         <% else%>
           <%= link_to "TP", new_user_session_path, class:"footer-text"%>
         <% end %>

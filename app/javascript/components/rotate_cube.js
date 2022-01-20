@@ -341,3 +341,8 @@ new Cube({
   viewport: viewport,
   element: document.getElementsByClassName('cube')[0]
 });
+
+
+console.log("hello")
+
+export { Events, Viewport, Cube };
