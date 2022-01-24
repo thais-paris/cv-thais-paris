@@ -1,3 +1,7 @@
+const rotateCube = () => {
+
+  console.log("ykgvvvvyvf")
+
 var events = new Events();
 events.add = function (obj) {
   obj.events = {};
@@ -344,5 +348,6 @@ new Cube({
 
 
 console.log("hello")
+}
 
-export { Events, Viewport, Cube };
+export { rotateCube };

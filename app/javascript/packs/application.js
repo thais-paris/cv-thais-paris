@@ -9,8 +9,8 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 // import { RangeDisplay } from "components/cube"
-import { Events, Viewport, Cube } from "components/rotate_cube";
 
+console.log("azertyuiop")
 
 Rails.start()
 Turbolinks.start()
@@ -27,3 +27,11 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { rotateCube } from "components/rotate_cube";
+
+console.log("1 app")
+
+document.addEventListener('turbolinks:load', () => {
+  console.log("application")
+  rotateCube()
+})
