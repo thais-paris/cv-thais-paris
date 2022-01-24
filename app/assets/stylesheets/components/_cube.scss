@@ -58,6 +58,11 @@
   width: 100%;
   height: 100%;
   border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 22px;
+  // align-items: center;
   h1{
     font-size: 18px;
     font-family: 'Poppins', "sans-serif";
@@ -91,7 +96,7 @@
 .cube__face--front  {
   background: rgba(255, 255, 255, 0.97);
   transform: rotateX(90deg) translateZ(195px);
-  padding: 45px 25px 0px 30px;
+  // padding: 45px 25px 0px 30px;
   -webkit-transform: rotateX(90deg) translateZ(195px);
   -moz-transform: rotateX(90deg) translateZ(195px);
   -ms-transform: rotateX(90deg) translateZ(195px);
@@ -103,7 +108,7 @@
 .cube__face--right  {
   background: rgba(255, 255, 255, 0.97);
   transform: translateZ(195px);
-  padding: 45px 15px 0px 15px;
+  // padding: 45px 15px 0px 15px;
   text-align: center;
   line-height: 43px;
   -webkit-transform: translateZ(195px);
@@ -128,7 +133,7 @@
 .cube__face--left   {
   background: rgba(255, 255, 255, 0.97);
   transform: rotateY(180deg) translateZ(195px);
-  padding: 30px 25px 0px 29px;;
+  // padding: 30px 25px 0px 29px;;
   -webkit-transform: rotateY(180deg) translateZ(195px);
   -moz-transform: rotateY(180deg) translateZ(195px);
   -ms-transform: rotateY(180deg) translateZ(195px);
@@ -143,7 +148,6 @@
 .cube__face--top {
   background: rgba(255, 255, 255, 0.97);
   transform: rotateY(-90deg) translateZ(195px);
-  padding: 98px 52px 0px 57px;;
   -webkit-transform: rotateY(-90deg) translateZ(195px);
   -moz-transform: rotateY(-90deg) translateZ(195px);
   -ms-transform: rotateY(-90deg) translateZ(195px);
@@ -161,7 +165,7 @@
   line-height: 0px;
   text-align: center;
   padding: 47px 75px 0px 75px;
-    transform: rotateX(-90deg) rotate(180deg) translateZ(195px);
+  transform: rotateX(-90deg) rotate(180deg) translateZ(195px);
   -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(195px);
   -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(195px);
   -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(195px);
@@ -180,7 +184,7 @@
     outline:0;
   }
   #contact_message{
-    padding: 14px 0px 55px 10px;
+   padding: 14px 0px 55px 10px;
   }
 }
 
