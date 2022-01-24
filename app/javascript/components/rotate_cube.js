@@ -285,7 +285,7 @@ const rotateCube = () => {
 
   }
   var viewport = new Viewport({
-    element: document.getElementsByClassName('cube')[0],
+    element: document.getElementById('cube'),
     fps: 20,
     sensivity: .1,
     sensivityFade: .93,
@@ -293,57 +293,63 @@ const rotateCube = () => {
     touchSensivity: 1.5
   });
 
-  function Cube(data) {
-    var self = this;
+  // function Cube(data) {
+  //   var self = this;
 
-    this.element = data.element;
-    this.sides = this.element.getElementsByClassName('side');
+  //   this.element = data.element;
+  //   this.sides = this.element.getElementsByClassName('side');
 
-    this.viewport = data.viewport;
-    this.viewport.on('rotate', function () {
-      self.rotateSides();
-    });
-    this.viewport.on('upsideDown', function (obj) {
-      self.upsideDown(obj);
-    });
-    this.viewport.on('sideChange', function () {
-      self.sideChange();
-    });
-  }
-  Cube.prototype.rotateSides = function () {
-    var viewport = this.viewport;
-    if (viewport.positionY > 90 && viewport.positionY < 270) {
-      this.sides[0].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + (viewport.positionX + viewport.torqueX) + 'deg)';
-      this.sides[5].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + -(viewport.positionX + 180 + viewport.torqueX) + 'deg)';
-    } else {
-      this.sides[0].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + (viewport.positionX - viewport.torqueX) + 'deg)';
-      this.sides[5].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + -(viewport.positionX + 180 - viewport.torqueX) + 'deg)';
-    }
-  }
-  Cube.prototype.upsideDown = function (obj) {
+  //   this.viewport = data.viewport;
+  //   this.viewport.on('rotate', function () {
+  //     self.rotateSides();
+  //   });
+  //   this.viewport.on('upsideDown', function (obj) {
+  //     self.upsideDown(obj);
+  //   });
+  //   this.viewport.on('sideChange', function () {
+  //     self.sideChange();
+  //   });
+  // }
+  // Cube.prototype.rotateSides = function () {
+  //   var viewport = this.viewport;
+  //   if (viewport.positionY > 90 && viewport.positionY < 270) {
+  //     this.sides[0].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + (viewport.positionX + viewport.torqueX) + 'deg)';
+  //     this.sides[5].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + -(viewport.positionX + 180 + viewport.torqueX) + 'deg)';
+  //   } else {
+  //     this.sides[0].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + (viewport.positionX - viewport.torqueX) + 'deg)';
+  //     this.sides[5].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + -(viewport.positionX + 180 - viewport.torqueX) + 'deg)';
+  //   }
+  // }
+  // Cube.prototype.upsideDown = function (obj) {
 
-    var deg = (obj.upsideDown == true) ? '180deg' : '0deg';
-    var i = 5;
+  //   var deg = (obj.upsideDown == true) ? '180deg' : '0deg';
+  //   var i = 5;
 
-    while (i > 0 && --i) {
-      this.sides[i].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + deg + ')';
-    }
+  //   while (i > 0 && --i) {
+  //     this.sides[i].getElementsByClassName('cube__face')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + deg + ')';
+  //   }
 
-  }
-  Cube.prototype.sideChange = function () {
+  // }
+  // Cube.prototype.sideChange = function () {
 
-    for (var i = 0; i < this.sides.length; ++i) {
-      this.sides[i].getElementsByClassName('cube__face')[0].className = 'cube__face';
-    }
+  //   for (var i = 0; i < this.sides.length; ++i) {
+  //     this.sides[i].getElementsByClassName('cube__face')[0].className = 'cube__face';
+  //   }
 
-    this.sides[this.viewport.currentSide - 1].getElementsByClassName('cube__face')[0].className = 'cube__face--bottom';
+  //   this.sides[this.viewport.currentSide - 1].getElementsByClassName('cube__face')[0].className = 'cube__face--bottom';
 
-  }
+  // }
 
-  new Cube({
-    viewport: viewport,
-    element: document.getElementsByClassName('cube')[0]
-  });
+  // new Cube({
+  //   viewport: viewport,
+  //   element: document.getElementById('cube')
+  // });
 }
 
-export { rotateCube };
+const initCubeRotation = () => {
+  if (document.getElementById('cube')) {
+    rotateCube()
+  }
+}
+
+export { initCubeRotation };

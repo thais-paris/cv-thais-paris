@@ -28,18 +28,19 @@
 .block-competences {
   display: flex;
   flex-wrap:wrap;
+  margin-left: 60px;
+  margin-right: 60px;
   .competence_content {
     background-color: $first;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
     width: 21%;
     padding: 10px 10px 3px 10px;
     border-radius: 5px;
     border: 1px solid $title;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    // text-align: center;
     // haut, droite, bas, gauche
   }
 }
@@ -54,13 +55,14 @@
   .H-competence_content {
     background-color: transparent;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
     width: 42%;
     height: 47px;
     border-radius: 6px;
     border: 1px solid $title;
-    margin-top: 15px;
     text-align: center;
     font-size: 4px;
   }

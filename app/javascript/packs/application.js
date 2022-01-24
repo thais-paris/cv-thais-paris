@@ -23,8 +23,8 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-import { rotateCube } from "components/rotate_cube";
+import { initCubeRotation } from "components/rotate_cube";
 
 document.addEventListener('turbolinks:load', () => {
-  rotateCube()
+  initCubeRotation()
 })
