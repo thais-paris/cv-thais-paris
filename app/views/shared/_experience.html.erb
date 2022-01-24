@@ -1,9 +1,9 @@
 <h1> Expériences</h1>
 <div class="home_experience">
-  <% Experience.first(2).each do |experience| %>
+  <% Experience.first(3).each do |experience| %>
     <h4> <%= experience.post%></h4>
     <p> <%= experience.date%> - <%= experience.entreprise%></p>
     <HR WIDTH="50">
   <% end %>
-  <%= link_to "Voir les expériences antérieurs", experiences_path , class: "btn btn-ghost" %>
+  <%= link_to "Expériences antérieurs", experiences_path , class: "btn btn-ghost" %>
 </div>
