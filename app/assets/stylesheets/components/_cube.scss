@@ -1,4 +1,4 @@
-* { box-sizing: border-box; }
+// * { box-sizing: border-box; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -14,7 +14,8 @@
 }
 
 .viewport {
-  -webkit-perspective: 390px;
+  // -webkit-perspective: 390px;
+  -webkit-perspective: 800px;
   -moz-perspective: 800px;
   -ms-perspective: 800px;
   -o-perspective: 800px;
@@ -38,8 +39,8 @@
   position: relative;
   margin: 0 auto;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
-  transition: transform 1s;
+  // transform: translateZ(-100px);
+  // transition: transform 1s;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -194,14 +195,14 @@
   -moz-touch-callout: none;
   -ms-touch-callout: none;
   -o-touch-callout: none;
-  // -touch-callout: none;
+  // touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none; }
 
-.cube > div > div.cube-image {
+.cube > div > div.cube__face {
   width: 200px;
   height: 200px;
   -webkit-transform: rotate(180deg);
